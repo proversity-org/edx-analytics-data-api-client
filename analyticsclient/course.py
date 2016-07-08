@@ -124,3 +124,13 @@ class Course(object):
         """
         path = 'courses/{0}/videos/'.format(self.course_id)
         return self.client.get(path, data_format=data_format)
+
+    def acceptance(self, data_format=DF.JSON):
+        """
+        Get the acceptance data for the course.
+
+        Arguments:
+            data_format (str): Format in which data should be returned
+        """
+        path = 'courses/{0}/acceptance/'.format(self.course_id)
+        return self.client.get(path, data_format=data_format)
