@@ -4,11 +4,11 @@ setup(
     name='edx-analytics-data-api-client',
     version='0.8.0',
     packages=['analyticsclient', 'analyticsclient.constants'],
-    url='https://github.com/edx/edx-analytics-data-api-client',
+    url='https://github.com/proversity-org/edx-analytics-data-api-client',
     description='Client used to access edX analytics data warehouse',
     long_description=open('README.rst').read(),
     install_requires=[
-        "requests==2.2.0",
+        "requests==2.9.1",
     ],
     tests_require=[
         "coverage==3.7.1",
